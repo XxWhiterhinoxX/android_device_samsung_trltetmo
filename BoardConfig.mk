@@ -24,6 +24,18 @@ TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_trlte_tmo_defconfig
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/trltetmo/init/init_trlte.c
 TARGET_UNIFIED_DEVICE := true
+BOARD_VENDOR := samsung
+TARGET_ARCH := arm
+TARGET_NO_BOOTLOADER := true
+TARGET_BOARD_PLATFORM := apq8084
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := krait
+ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno420
+TARGET_BOOTLOADER_BOARD_NAME := APQ8084
+TARGET_CPU_SMP := true
 
 # Radio
 BOARD_RIL_CLASS := ../../../device/samsung/trltetmo/ril

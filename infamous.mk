@@ -14,13 +14,17 @@
 # limitations under the License.
 #
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+
 $(call inherit-product, device/samsung/trltetmo/full_trltetmo.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/infamous/config/nfc_enhanced.mk)
 
-# Inherit common CM phone.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit common infamous phone.
+$(call inherit-product, vendor/infamous/config/common_phone.mk)
 
 PRODUCT_DEVICE := trltetmo
-PRODUCT_NAME := cm_trltetmo
+PRODUCT_NAME := infamous_trltetmo
